@@ -1,0 +1,59 @@
+.container-fluid {
+  /*background-color: black;*/
+  box-sizing: border-box;
+  height: 670px;
+  display: center-block;
+  margin: 0;
+}
+
+.jumbotron-fluid {
+	text-align: center;
+	color: black;
+	position: absolute;
+	top: 50%;
+  	left: 50%;
+  	width: 100%;
+  	transform: translate(-50%, -50%);
+}
+
+.jumbotron-fluid > .display-4 {
+	font-family: 'Bungee', cursive;
+	color: darkblue;
+	font-size: 36px;
+}
+
+.jumbotron-fluid > .lead {
+	font-family: 'Saira Extra Condensed', sans-serif;
+	color: #a67c00;
+	font-size: 24px;
+}
+
+.ulap-bg {
+	background: url(../images/ulap-bg.jpg) center center fixed;
+  	background-size: cover;
+	background-repeat: no-repeat;
+	height: 670px;
+	width: 100%;
+	filter: blur(4px);
+  	-webkit-filter: blur(4px);
+}
+
+.dev-site {
+	position: absolute;
+	top: 86%;
+  	left: 50%;
+  	width: 100%;
+  	transform: translate(-50%, -50%);
+	text-align: center;
+	font-size: 10px;
+}
+
+.home-btn {
+	background-color: white;
+	color: black;
+}
+
+.home-btn:hover {
+	background-color: black;
+	color: white;
+}
