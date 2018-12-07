@@ -1,48 +1,49 @@
 .container-fluid {
-  /*background-color: black;*/
+  background-color: #71c7ec;
   box-sizing: border-box;
-  height: 670px;
+  height: auto;
   display: center-block;
   margin: 0;
+  width: 100%;
 }
 
 .jumbotron-fluid {
 	text-align: center;
 	color: black;
-	position: absolute;
+	position: fixed;
 	top: 50%;
   	left: 50%;
   	width: 100%;
-  	transform: translate(-50%, -50%);
+  	transform: translate(-50%, -65%);
+  	opacity: 9999;	
 }
 
-.jumbotron-fluid > .display-4 {
-	font-family: 'Bungee', cursive;
-	color: darkblue;
-	font-size: 36px;
+.banner-intro {
+	width: 100%;
+	opacity: 9999;
 }
 
-.jumbotron-fluid > .lead {
-	font-family: 'Saira Extra Condensed', sans-serif;
-	color: #a67c00;
-	font-size: 24px;
+.jumbotron-fluid > p {
+	font-family: 'Archivo Narrow', sans-serif;
+	color: red;
+	font-size: 20px;
+	margin-top: 5px;
+	margin-bottom: 0;
 }
 
 .ulap-bg {
 	background: url(../images/ulap-bg.jpg) center center fixed;
-  	background-size: cover;
+	background-size: cover;
 	background-repeat: no-repeat;
 	height: 670px;
 	width: 100%;
-	filter: blur(4px);
-  	-webkit-filter: blur(4px);
 }
 
 .dev-site {
 	position: absolute;
 	top: 86%;
   	left: 50%;
-  	width: 100%;
+  	width: 90%;
   	transform: translate(-50%, -50%);
 	text-align: center;
 	font-size: 10px;
@@ -54,6 +55,65 @@
 }
 
 .home-btn:hover {
-	background-color: black;
+	background-color: blue;
 	color: white;
+}
+
+.navbar {
+	padding-bottom: 0;
+}
+
+.navbarbrand > img {
+	height: 50px;
+	width: 50px;
+	margin: 5px;
+}
+
+.navbar-brand {
+	font-size: 20px;
+	text-align: left;
+}
+
+.nav-item > .nav-link {
+	padding: 6px;
+	margin: 0 1px;
+}
+
+.nav-link {
+	color: grey;
+}
+
+.active a {
+	background-color: white;
+	color: skyblue;
+	font-size: 120%;
+	
+}
+
+[class*="col"] {
+    float: left;
+    box-sizing: border-box;
+}
+
+main {
+	height: 100%;
+	background-color: white;
+}
+
+footer {
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	background-color: lightblue;
+	text-align: center;
+}
+
+.d-block {
+	height: 100%;
+	
+}
+
+.col-features {
+	height: 200px;
+	background-color: lightgrey;
 }
