@@ -1,3 +1,6 @@
+* {
+	margin: 0;
+}
 .container-fluid {
   background-color: #71c7ec;
   box-sizing: border-box;
@@ -61,6 +64,7 @@
 
 .navbar {
 	padding-bottom: 0;
+	background-color: #71c7ec;
 }
 
 .navbarbrand > img {
@@ -101,11 +105,24 @@ main {
 }
 
 footer {
-	height: 30px;
+	height: 100%;
 	line-height: 30px;
 	font-size: 12px;
-	background-color: lightblue;
+	background-color: #71c7ec;
 	text-align: center;
+}
+
+footer > p {
+	margin-left: 0px;
+    margin-right: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+
+.footer {
+	margin-right: 0;
+	margin-left: 0;
 }
 
 .d-block {
@@ -113,7 +130,65 @@ footer {
 	
 }
 
-.col-features {
-	height: 200px;
-	background-color: lightgrey;
+.carousel-inner {
+	width: 100%;
+	max-height: 800px;
+}
+
+.intro-row {
+	margin: 15px;
+	text-align: center;
+	box-sizing: border-box;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#features {
+	margin-top: 20px;
+	margin-bottom: 20px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img-features {
+	margin-left: 25px;
+	margin-right: 10px;
+	width: 90%;
+}
+
+#features > img {
+	width: 90%;
+	text-align: left;
+}
+
+#features > h3 {
+	margin-bottom: 30px;
+}
+
+.carousel-inner > img {
+	background: cover;	
+}
+
+#carousel-img {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.col-carousel {
+	padding: 0;
+}
+
+.row-features {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.aboutus-col, .why-col {
+	margin: 30px;
+	margin-bottom: 0;
+
+}
+
+.aboutus-col > h1, .why-col > h2 {
+	margin-bottom: 20px;
 }
