@@ -1,13 +1,13 @@
 * {
 	margin: 0;
+
 }
 .container-fluid {
   background-color: #71c7ec;
   box-sizing: border-box;
-  height: auto;
-  display: center-block;
+  height: 100%;
   margin: 0;
-  width: 100%;
+  padding: 0;
 }
 
 .jumbotron-fluid {
@@ -63,8 +63,10 @@
 }
 
 .navbar {
-	padding-bottom: 0;
+	box-sizing: border-box;
 	background-color: #71c7ec;
+	padding: 30px;
+	padding-bottom: 0;
 }
 
 .navbarbrand > img {
@@ -88,8 +90,8 @@
 }
 
 .active a {
-	background-color: white;
-	color: skyblue;
+	background-color: skyblue;
+	color: white;
 	font-size: 120%;
 	
 }
@@ -100,13 +102,17 @@
 }
 
 main {
-	height: 100%;
+	box-sizing: border-box;
+	height: auto;
 	background-color: #71c7ec;
+	
 }
 
 footer {
-	height: 100%;
-	line-height: 30px;
+	box-sizing: border-box;
+	border-top: 0.2px solid white;
+	min-height: 50px;
+	line-height: 50px;
 	font-size: 12px;
 	background-color: #71c7ec;
 	text-align: center;
@@ -177,13 +183,11 @@ footer > p {
 	margin-bottom: 30px;
 }
 
-.carousel-inner > img {
-	background: cover;	
-}
 
 #carousel-img {
-	margin-top: 10px;
-	margin-bottom: 10px;
+	box-sizing: border-box;
+	padding-top: 20px;
+	
 }
 
 .col-carousel {
@@ -197,14 +201,17 @@ footer > p {
 }
 
 .aboutus-col {
-	margin: 30px;
-	margin-bottom: 0;
+	box-sizing: border-box;
+	padding: 40px;
+	padding-bottom: 20px;
 
 }
 
 .why-col {
-	margin: 30px;
-	margin-bottom: 40px;
+	box-sizing: border-box;
+	padding: 0 40px;
+	padding-bottom: 40px;
+	
 }
 
 .aboutus-col > h6, .why-col > h6 {
@@ -230,7 +237,7 @@ form a:hover {
 
 .contact-col {
 	margin-top: 30px;
-	margin-bottom: 20px;
+	margin-bottom: 60px;
 	box-sizing: border-box;
 	padding: 0 40px;
 }
@@ -238,23 +245,32 @@ form a:hover {
 .map-col {
 	margin-bottom: 30px;
 	box-sizing: border-box;
-	padding: 0 40px;
-	/*width: auto;
-	height: auto;*/
+	padding: 0 20px;
 }
 
 
 .contacthead-col {
-	padding-top: 30px;
+	padding: 40px;
+	padding-bottom: 0;
 }
 
-.map-col > h6 {
-	margin-top: 86px;
-	margin-bottom: 30px;
+.contacthead-col > h6 {
 	font-size: 14px;
 }
 
 
 label {
 	padding-top: 20px;
+	font-weight: bold;
+}
+
+
+.modal-body {
+  margin: auto;
+  max-width: 100%;
+}
+
+.modal-col {
+	padding: 20px;
+	height: auto;
 }
