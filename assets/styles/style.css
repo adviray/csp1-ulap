@@ -3,7 +3,7 @@
 
 }
 .container-fluid {
-  background-color: #71c7ec;
+  background-color: white;
   box-sizing: border-box;
   height: 100%;
   margin: 0;
@@ -65,19 +65,26 @@
 .navbar {
 	box-sizing: border-box;
 	background-color: #71c7ec;
-	padding: 30px;
+	padding: 1px;
 	padding-bottom: 0;
+	min-height: 50px;
 }
 
 .navbarbrand > img {
-	height: 50px;
-	width: 50px;
-	margin: 5px;
+	max-height: 40px;
+	width: 40px;
+	line-height: 40px;
+	margin-top: 5px;
+	margin-left: 5px;
 }
 
-.navbar-brand {
-	font-size: 20px;
-	text-align: left;
+.navbar-text {
+	font-size: 14px;
+	
+}
+
+.navbar-toggler {
+	margin-right: 18px;
 }
 
 .nav-item > .nav-link {
@@ -87,6 +94,7 @@
 
 .nav-link {
 	color: grey;
+	font-size: 14px;
 }
 
 .active a {
@@ -136,7 +144,14 @@ footer > p {
 	
 }
 
+#carousel-img {
+	box-sizing: border-box;
+	padding-top: 70px;
+	
+}
+
 .carousel-inner {
+	/*padding-top: 70px;*/
 	width: 100%;
 	max-height: 800px;
 }
@@ -184,34 +199,30 @@ footer > p {
 }
 
 
-#carousel-img {
-	box-sizing: border-box;
-	padding-top: 20px;
-	
-}
 
-.col-carousel {
-	padding: 0;
-}
 
 .row-features {
 	margin-right: 0;
 	margin-left: 0;
-	margin-bottom: 30px;
 }
 
 .aboutus-col {
 	box-sizing: border-box;
 	padding: 40px;
 	padding-bottom: 20px;
+	padding-top: 220px;
 
 }
 
 .why-col {
 	box-sizing: border-box;
-	padding: 0 40px;
+	padding: 0 80px;
 	padding-bottom: 40px;
 	
+}
+
+dd {
+	padding-bottom: 10px;
 }
 
 .aboutus-col > h6, .why-col > h6 {
@@ -245,13 +256,14 @@ form a:hover {
 .map-col {
 	margin-bottom: 30px;
 	box-sizing: border-box;
-	padding: 0 20px;
+	padding: 40px;
 }
 
 
 .contacthead-col {
 	padding: 40px;
 	padding-bottom: 0;
+	padding-top: 220px;
 }
 
 .contacthead-col > h6 {
@@ -273,4 +285,122 @@ label {
 .modal-col {
 	padding: 20px;
 	height: auto;
+}
+
+.galleryhead-col {
+	padding: 40px;
+	padding-bottom: 0;
+	padding-top: 220px;
+}
+
+.galleryhead-col > h6 {
+	font-size: 14px;
+}
+
+@media only screen and (max-width: 400px) {
+	.aboutus-col,
+	.contacthead-col,
+	.galleryhead-col {
+		padding-top: 100px;
+	}
+
+	#carousel-img {
+		padding-top: 100px
+	}
+
+	.navbarbrand > img {
+		max-height: 40px;
+		width: 40px;
+		line-height: 40px;
+		margin-top: 5px;
+		margin-left: 5px;
+	}
+
+	.navbar-text {
+		font-size: 14px;
+	}
+
+	.nav-link {
+	color: grey;
+	font-size: 11px;
+	}
+
+	.active a {
+	background-color: skyblue;
+	color: white;
+	font-size: 100%;
+	}
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+	.aboutus-col,
+	.contacthead-col,
+	.galleryhead-col {
+		padding-top: 160px;
+	}
+
+	#carousel-img {
+		padding-top: 160px
+	}
+
+	.navbar-text {
+		font-size: 40px;
+		height: 60px;
+		line-height: 60px;
+	}
+
+	.navbarbrand > img {
+		min-height: 80px;
+		width: 80px;
+		line-height: 80px;
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+
+	.nav-link {
+		color: grey;
+		font-size: 16px;
+	}
+
+	.active a {
+		background-color: skyblue;
+		color: white;
+		font-size: 130%;
+	}
+}
+
+@media only screen and (min-width: 961px) {
+	.aboutus-col,
+	.contacthead-col,
+	.galleryhead-col {
+		padding-top: 150px;
+	}
+
+	#carousel-img {
+		padding-top: 140px
+	}
+
+	.navbar-text {
+		font-size: 45px;
+		height: 120px;
+		line-height: 100px;
+	}
+
+	.navbarbrand > img {
+		min-height: 120px;
+		width: 120px;
+		margin-top: 0;
+		margin-left: 5px;
+	}
+
+	.nav-link {
+		color: grey;
+		font-size: 18px;
+	}
+
+	.active a {
+		background-color: skyblue;
+		color: white;
+		font-size: 160%;
+	}
 }
