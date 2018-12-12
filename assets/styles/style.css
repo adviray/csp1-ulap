@@ -8,6 +8,11 @@
   padding: 0;
 }
 
+.intro-cont {
+	padding-left: 0px;
+  	padding-right: 0px;
+}
+
 .jumbotron-fluid {
 	text-align: center;
 	color: black;
@@ -34,14 +39,14 @@
 
 .ulap-bg {
 	background: url(../images/ulap-bg.jpg) center center fixed;
-	background-size: cover;
-	background-repeat: no-repeat;
+	/*background-size: cover;
+	background-repeat: no-repeat;*/
 	height: 670px;
 	width: 100%;
 }
 
 .dev-site {
-	position: absolute;
+	position: fixed;
 	top: 86%;
   	left: 50%;
   	width: 90%;
@@ -78,6 +83,8 @@
 
 .navbar-text {
 	font-size: 14px;
+	font-family: 'Archivo Black', sans-serif;
+
 }
 
 .navbar-text > a {
@@ -92,6 +99,7 @@
 .nav-link {
 	color: grey;
 	font-size: 14px;
+	font-family: 'Saira', sans-serif;
 }
 
 li {
@@ -115,6 +123,7 @@ main {
 	box-sizing: border-box;
 	height: auto;
 	background-color: #71c7ec;
+
 	
 }
 
@@ -293,6 +302,7 @@ label {
 	padding: 40px;
 	padding-bottom: 0;
 	padding-top: 220px;
+
 }
 
 .galleryhead-col > h6 {
@@ -301,6 +311,37 @@ label {
 
 .modal-col {
 	text-align: center;
+}
+
+.logo > p {
+	color: white;
+	font-size: 300%;
+	text-align: center;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Archivo Black', sans-serif;
+}
+
+h6 {
+	font-family: 'Archivo Narrow', sans-serif;
+}
+
+p, label, dt, dd {
+	font-family: 'Saira', sans-serif;
+}
+
+.modal-content {
+	background-color: #B0DFE5;
+}
+
+
+.modal-header {
+	font-family: 'Archivo Narrow', sans-serif;
+}
+
+.modal-footer > .btn-danger{
+	font-family: 'Saira', sans-serif;
 }
 
 
@@ -325,7 +366,7 @@ label {
 	}
 
 	.navbar-text {
-		font-size: 15px;
+		font-size: 12px;
 	}
 
 	.nav-link {
@@ -339,9 +380,35 @@ label {
 		font-size: 90%;
 	}
 
+	.logo {
+		padding-top: 20px;
+	}
+
 }
 
 @media only screen and (min-width: 401px) and (max-width: 960px) {
+	.banner-intro {
+		width: 100%;
+		opacity: 9999;
+		position: absolute;
+		float: left;
+		top: -1000%;
+		left: -10%;
+		transform: translate(10%, 10%);
+	}
+
+	.jumbotron-fluid > p {
+		font-family: 'Archivo Narrow', sans-serif;
+		color: red;
+		font-size: 20px;
+		margin-top: 5px;
+		margin-bottom: 0;
+		position: absolute;
+		float: left;
+		top: -300%;
+		left: 40%;
+	}
+
 	.aboutus-col,
 	.contacthead-col,
 	.galleryhead-col {
@@ -353,7 +420,7 @@ label {
 	}
 
 	.navbar-text {
-		font-size: 40px;
+		font-size: 34px;
 	}
 
 	.navbarbrand > img {
@@ -379,9 +446,31 @@ label {
 		margin-left: 350px;
 	}
 
+	.logo {
+		padding-top: 30px;
+	}
+
+	.modal-content {
+		width: 120%;
+	}
+
+
 }
 
 @media only screen and (min-width: 961px) {
+	.logo {
+		width: 705px;
+		height: 633px;
+		padding-top: 140px;
+		padding-left: 0;
+		position: absolute;
+		float: right;
+		top: 1%;
+		left: 58%;
+
+	}
+
+
 	.aboutus-col,
 	.contacthead-col,
 	.galleryhead-col {
@@ -389,11 +478,14 @@ label {
 	}
 
 	#carousel-img {
-		padding-top: 160px
+		padding-left: 0;
+		margin-left: 0;
+		margin-right: 0;
+		padding-top: 140px;
 	}
 
 	.navbar-text {
-		font-size: 45px;
+		font-size: 40px;
 		height: 100px;
 		line-height: 100px;
 	}
@@ -422,6 +514,13 @@ label {
 		margin-right: 10px;
 	}
 
-	
+	.p3 {
+		position: relative;
+		top: -65%;
+	}
+
+	.modal-content {
+		width: 130%;
+	}
 
 }
