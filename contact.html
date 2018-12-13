@@ -6,6 +6,8 @@
 	
 	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
 
+	<link rel="shortcut icon" href="favicon.ico">
+
 	<title>csp1-ulap</title>
 
 
@@ -28,10 +30,10 @@
 	
 	<header id="home" class="row">
 		<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-lightblue">
-			<div class="navbarbrand">
+			<div class="navbarbrand animated lightSpeedIn">
 			<img class="img-fluid" src="assets/images/ulap-logo.jpg">
 				<span class="navbar-text">
-				<a href="#">ULAP Travel and Tours Services</a>
+				<a href="index.html">ULAP Travel and Tours Services</a>
 				</span>
 			</div>
 			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#nav-tabsNav" aria-controls="nav-tabsNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,23 +42,23 @@
 
 				<div class="collapse navbar-collapse justify-content-end colapse show" id="nav-tabsNav">
 				<ul class="nav nav-tabs ml auto">
-      				<li class="nav-item home">
+      				<li class="nav-item home animated slideInLeft">
         				<a class="nav-link" href="home.html">Home</a>
       				</li>
-      				<li class="nav-item">
+      				<li class="nav-item animated slideInUp">
         				<a class="nav-link" href="about.html">About</a>
       				</li>
-      				<li class="nav-item active">
+      				<li class="nav-item active animated slideInDown">
         				<a class="nav-link" href="#contact">Contact<span class="sr-only">(current)</span></a>
       				</li>
-      				<li class="nav-item">
+      				<li class="nav-item animated slideInRight">
         				<a class="nav-link" href="gallery.html">Gallery</a>
       				</li>
     			</ul>
 				</div>
 		</nav>
 	</header>
-	<main class="container-fluid">
+	<main class="container-fluid animated fadeIn">
 
 		<div class="row contact-row">
 			<div class="col contacthead-col col-fluid">
@@ -65,9 +67,9 @@
 			</div>
 		</div>
 
-		<div class="row contact-row justify-content-lg-center justify-content-md-center justify-content-sm-center">
-			<div class="col contact-col col-fluid col-lg-6 col-lg-auto col-md-12 col-md-auto col-sm-12 col-sm-auto">
-					<form class="contact-form" action="mailto:alexanderd.viray@gmail.com" method="post" enctype="text/plain">
+		<div class="row 	contact-row justify-content-lg-center justify-content-md-center justify-content-sm-center">
+			<div class="contact-col col-fluid col-lg-6 col-lg-auto col-md-12 col-md-auto col-sm-12 col-sm-auto">
+					<form class="contact-form" action="mailto:alexanderd.viray@gmail.com" method="get" enctype="text/plain">
 					 	<div class="form-group">
 					   		<label for="Name">Name</label>
 					    	<input type="text" class="form-control" id="yourname" placeholder="enter your name">
@@ -75,14 +77,14 @@
 
 					  	<div class="form-group">
 					   		<label for="Email">Email address</label>
-					    	<input type="text" class="form-control" id="youremail" placeholder="enter your email (e.g. name@example.com)">
+					    	<input type="email" class="form-control" id="youremail" placeholder="enter your email (e.g. name@example.com)">
 					  	</div>
 					  	
 					  	<div class="form-group">
 					    	<label for="Textarea">Message</label>
 					    	<textarea class="form-control" id="yourmessage" rows="5" placeholder="type your message here"></textarea>
 					  	</div>
-					  	<button type="submit" class="btn btn-primary btn-lightblue"><a href="mailto:alexanderd.viray@gmail.com?subject=Inquiry">Send</a></button>
+					  	<button type="submit" value="send" class="btn btn-primary btn-lightblue"><a href="mailto:alexanderd.viray@gmail.com?subject=Inquiry">Send</a></button>
 					  	<button type="reset" class="btn btn-danger">Reset</button>
 					</form>
 			</div>

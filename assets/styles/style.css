@@ -15,18 +15,23 @@
 
 .jumbotron-fluid {
 	text-align: center;
-	color: black;
-	position: fixed;
-	top: 50%;
+	max-width: 100%;
+	position: absolute;
+	top: 10%;
   	left: 50%;
   	width: 100%;
-  	transform: translate(-50%, -65%);
-  	opacity: 9999;	
+  	transform: translateX(-50%); 		
+}
+
+.vertical-center {
+	min-height: 100%;
+  	align-items: center;
+
 }
 
 .banner-intro {
 	width: 100%;
-	opacity: 9999;
+	height: 100%;
 }
 
 .jumbotron-fluid > p {
@@ -35,22 +40,23 @@
 	font-size: 20px;
 	margin-top: 5px;
 	margin-bottom: 0;
+	text-align: center;
 }
 
 .ulap-bg {
-	background: url(../images/ulap-bg.jpg) center center fixed;
-	/*background-size: cover;
-	background-repeat: no-repeat;*/
+	background: url(../images/ulap-bg.jpg) /*center center fixed*/;
+	/*background-size: cover;*/
+	/*background-repeat: no-repeat;*/
 	height: 670px;
 	width: 100%;
 }
 
 .dev-site {
-	position: fixed;
-	top: 86%;
+	position: absolute;
+	top: 90%;
   	left: 50%;
   	width: 90%;
-  	transform: translate(-50%, -50%);
+  	transform: translateX(-50%);
 	text-align: center;
 	font-size: 10px;
 }
@@ -123,7 +129,7 @@ main {
 	box-sizing: border-box;
 	height: auto;
 	background-color: #71c7ec;
-
+	animation-duration: 5s;
 	
 }
 
@@ -347,6 +353,14 @@ p, label, dt, dd {
 
 
 @media only screen and (max-width: 400px) {
+	.jumbotron-fluid {	
+		top: 30%;	
+	}
+
+	.dev-site {
+		top: 105%; 	
+	}
+
 	.aboutus-col,
 	.contacthead-col,
 	.galleryhead-col {
@@ -387,26 +401,15 @@ p, label, dt, dd {
 }
 
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-	.banner-intro {
-		width: 100%;
-		opacity: 9999;
-		position: absolute;
-		float: left;
-		top: -1000%;
-		left: -10%;
-		transform: translate(10%, 10%);
+	.jumbotron-fluid {
+		
+		top: 15%;
+	  		
 	}
 
-	.jumbotron-fluid > p {
-		font-family: 'Archivo Narrow', sans-serif;
-		color: red;
-		font-size: 20px;
-		margin-top: 5px;
-		margin-bottom: 0;
-		position: absolute;
-		float: left;
-		top: -300%;
-		left: 40%;
+
+	.dev-site {
+		top: 60%;
 	}
 
 	.aboutus-col,
@@ -458,6 +461,11 @@ p, label, dt, dd {
 }
 
 @media only screen and (min-width: 961px) {
+	.jumbotron-fluid {
+		top: 10%;		
+	}
+
+
 	.logo {
 		width: 705px;
 		height: 633px;
@@ -467,7 +475,6 @@ p, label, dt, dd {
 		float: right;
 		top: 1%;
 		left: 58%;
-
 	}
 
 
