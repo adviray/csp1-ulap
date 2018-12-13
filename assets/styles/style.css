@@ -24,7 +24,7 @@
 }
 
 .vertical-center {
-	min-height: 100%;
+	min-height: 70%;
   	align-items: center;
 
 }
@@ -41,6 +41,7 @@
 	margin-top: 5px;
 	margin-bottom: 0;
 	text-align: center;
+	height: 50%
 }
 
 .ulap-bg {
@@ -316,7 +317,7 @@ label {
 }
 
 .modal-col {
-	text-align: center;
+	/*text-align: center;*/
 }
 
 .logo > p {
@@ -358,7 +359,7 @@ p, label, dt, dd {
 	}
 
 	.dev-site {
-		top: 105%; 	
+		top: 90%; 	
 	}
 
 	.aboutus-col,
@@ -402,14 +403,13 @@ p, label, dt, dd {
 
 @media only screen and (min-width: 401px) and (max-width: 960px) {
 	.jumbotron-fluid {
-		
 		top: 15%;
 	  		
 	}
 
 
 	.dev-site {
-		top: 60%;
+		top: 90%;
 	}
 
 	.aboutus-col,
@@ -423,20 +423,21 @@ p, label, dt, dd {
 	}
 
 	.navbar-text {
-		font-size: 34px;
+		font-size: 24px;
 	}
 
 	.navbarbrand > img {
-		min-height: 80px;
-		width: 80px;
-		line-height: 80px;
+		min-height: 60px;
+		width: 60px;
+		line-height: 60px;
 		margin-top: 10px;
 		margin-left: 15px;
 	}
 
 	.nav-link {
 		color: grey;
-		font-size: 16px;
+		font-size: 14px;
+
 	}
 
 	.active a {
@@ -446,7 +447,7 @@ p, label, dt, dd {
 	}
 
 	.home {
-		margin-left: 350px;
+		padding-left: 200px;
 	}
 
 	.logo {
@@ -477,6 +478,10 @@ p, label, dt, dd {
 		left: 58%;
 	}
 
+	.logo > p {
+		font-size: 240%;
+}
+
 
 	.aboutus-col,
 	.contacthead-col,
@@ -492,7 +497,7 @@ p, label, dt, dd {
 	}
 
 	.navbar-text {
-		font-size: 40px;
+		font-size: 30px;
 		height: 100px;
 		line-height: 100px;
 	}
@@ -529,5 +534,6 @@ p, label, dt, dd {
 	.modal-content {
 		width: 130%;
 	}
+	
 
 }
