@@ -1,16 +1,7 @@
-
-}
-.container-fluid {
-  background-color: white;
-  box-sizing: border-box;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 .intro-cont {
 	padding-left: 0px;
   	padding-right: 0px;
+  	height: 100vh;
 }
 
 .jumbotron-fluid {
@@ -26,12 +17,11 @@
 .vertical-center {
 	min-height: 70%;
   	align-items: center;
-
 }
 
 .banner-intro {
 	width: 100%;
-	height: 100%;
+	max-height: auto;
 }
 
 .jumbotron-fluid > p {
@@ -41,15 +31,12 @@
 	margin-top: 5px;
 	margin-bottom: 0;
 	text-align: center;
-	height: 50%
+	height: auto;
 }
 
 .ulap-bg {
-	background: url(../images/ulap-bg.jpg) /*center center fixed*/;
-	/*background-size: cover;*/
-	/*background-repeat: no-repeat;*/
-	height: 670px;
-	width: 100%;
+	background: url(../images/ulap-bg.jpg);
+	height: 100vh;
 }
 
 .dev-site {
@@ -118,7 +105,6 @@ li {
 	background-color: skyblue;
 	color: white;
 	font-size: 120%;
-	
 }
 
 [class*="col"] {
@@ -130,8 +116,7 @@ main {
 	box-sizing: border-box;
 	height: auto;
 	background-color: #71c7ec;
-	animation-duration: 5s;
-	
+	animation-duration: 5s;	
 }
 
 footer {
@@ -158,14 +143,12 @@ footer > p {
 }
 
 .d-block {
-	height: 100%;
-	
+	height: 100%;	
 }
 
 #carousel-img {
 	box-sizing: border-box;
-	padding-top: 70px;
-	
+	padding-top: 70px;	
 }
 
 .carousel-inner {
@@ -182,6 +165,10 @@ footer > p {
 	margin-right: 0;
 }
 
+.intro-col {
+	padding: 0;
+}
+
 .intro-col > h1 {
 	padding-top: 50px;
 	padding-bottom: 20px;
@@ -196,28 +183,24 @@ footer > p {
 	margin-bottom: 20px;
     padding: 0;
     box-sizing: border-box;
+    padding-left: 15px;
+	padding-right: 15px;
 }
 
-.img-features {
-	margin-left: 25px;
-	margin-right: 10px;
-	width: 90%;
-
-}
-
-#features > img {
-	width: 90%;
-	text-align: left;
+#features, .img-features {
+	width: 100%;
+	text-align: center;
 	border-radius: 150px;
-	padding-bottom: 20px;
+	padding-bottom: 20px;	
 }
 
 #features > h3 {
 	margin-bottom: 30px;
 }
 
-
-
+#features > p {
+	margin-bottom: 0;
+}
 
 .row-features {
 	margin-right: 0;
@@ -229,14 +212,12 @@ footer > p {
 	padding: 40px;
 	padding-bottom: 20px;
 	padding-top: 220px;
-
 }
 
 .why-col {
 	box-sizing: border-box;
 	padding: 0 80px;
 	padding-bottom: 40px;
-	
 }
 
 dd {
@@ -277,7 +258,6 @@ form a:hover {
 	padding: 40px;
 }
 
-
 .contacthead-col {
 	padding: 40px;
 	padding-bottom: 0;
@@ -288,12 +268,10 @@ form a:hover {
 	font-size: 14px;
 }
 
-
 label {
 	padding-top: 20px;
 	font-weight: bold;
 }
-
 
 .modal-body {
   margin: auto;
@@ -309,15 +287,15 @@ label {
 	padding: 40px;
 	padding-bottom: 0;
 	padding-top: 220px;
-
+	text-align: left;
 }
 
 .galleryhead-col > h6 {
 	font-size: 14px;
 }
 
-.modal-col {
-	/*text-align: center;*/
+.gallery-row {
+	text-align: center;
 }
 
 .logo > p {
@@ -341,7 +319,6 @@ p, label, dt, dd {
 .modal-content {
 	background-color: #B0DFE5;
 }
-
 
 .modal-header {
 	font-family: 'Archivo Narrow', sans-serif;
@@ -398,18 +375,15 @@ p, label, dt, dd {
 	.logo {
 		padding-top: 20px;
 	}
-
 }
 
 @media only screen and (min-width: 401px) and (max-width: 960px) {
 	.jumbotron-fluid {
-		top: 15%;
-	  		
+		top: 17%;	
 	}
 
-
 	.dev-site {
-		top: 90%;
+		top: 95%;
 	}
 
 	.aboutus-col,
@@ -437,7 +411,6 @@ p, label, dt, dd {
 	.nav-link {
 		color: grey;
 		font-size: 14px;
-
 	}
 
 	.active a {
@@ -453,19 +426,12 @@ p, label, dt, dd {
 	.logo {
 		padding-top: 30px;
 	}
-
-	.modal-content {
-		width: 120%;
-	}
-
-
 }
 
 @media only screen and (min-width: 961px) {
 	.jumbotron-fluid {
 		top: 10%;		
 	}
-
 
 	.logo {
 		width: 705px;
@@ -480,7 +446,7 @@ p, label, dt, dd {
 
 	.logo > p {
 		font-size: 240%;
-}
+	}
 
 
 	.aboutus-col,
@@ -530,10 +496,4 @@ p, label, dt, dd {
 		position: relative;
 		top: -65%;
 	}
-
-	.modal-content {
-		width: 130%;
-	}
-	
-
 }
